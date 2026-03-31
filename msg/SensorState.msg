@@ -11,7 +11,7 @@ uint8 CLIFF = 1
 # Sonar sensor states (states are combined, when multiple sonar sensors are triggered)
 uint8 SONAR = 1
 
-# Illumination sensor (states are combined, when multiple illumination sensors are triggered) 
+# Illumination sensor (states are combined, when multiple illumination sensors are triggered)
 uint8 ILLUMINATION = 1
 
 # Button states (states are combined, when multiple buttons are pressed)
@@ -25,6 +25,10 @@ uint8 ERROR_RIGHT_MOTOR = 2
 # Motor torque
 uint8 TORQUE_ON  = 1
 uint8 TORQUE_OFF = 2
+
+# add: 불꽃 및 가스 센서 상태 상수 (코드 가독성을 위해)
+uint8 FLAME = 1
+uint8 GAS = 1
 
 ########################################
 # Messages
@@ -40,3 +44,7 @@ bool   torque
 int32  left_encoder    # (-2,147,483,648 ~ 2,147,483,647)
 int32  right_encoder   # (-2,147,483,648 ~ 2,147,483,647)
 float32  battery
+
+# add:
+uint8   flame  # 불꽃 감지 상태 (0: 안전, 1: 위험)
+uint8   gas    # 가스 감지 상태 (0: 안전, 1: 위험)

@@ -36,8 +36,8 @@ uint8 GAS = 1
 std_msgs/Header  header
 uint8   bumper
 float32 cliff
-# float32 sonar
-# float32 illumination
+float32 sonar
+float32 illumination
 uint8   led
 uint8  button
 bool   torque

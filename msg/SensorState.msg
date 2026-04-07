@@ -48,5 +48,5 @@ float32  battery
 # add:
 uint8   flame  # 불꽃 감지 상태 (0: 안전, 1: 위험)
 uint8   gas    # 가스 감지 상태 (0: 안전, 1: 위험)
-float32 temperature  # 온도값
-float32 humidity     # 습도값
+int32 temperature  # 온도값
+int32 humidity     # 습도값
